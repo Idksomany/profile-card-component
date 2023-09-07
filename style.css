@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 18px;
+}
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --very-dark-blue:hsl(229, 23%, 23%);
+    ---dark-blue:hsl(227, 10%, 46%);
+}
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    background-image: url("images/bg-pattern-top.svg"), 
+    url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -15vw top -35vw, right -20vw top 40vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card{
+    width: 400px;
+    display: flex;
+    flex-direction:column ;
+    background-color: white;
+    border-radius: 15px;
+}
+.div-img img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-content img{
+    border-radius: 50%;
+    border: 5px white solid;
+    margin-top: -52px;
+}
+.card-content-ageText{
+    display: flex;
+    gap: 0.5rem;
+}
+.card-content-ageText h1{
+    font-weight: 700;
+}
+.card-content-ageText p{
+    font-weight: 700;
+    color: var(---dark-blue);
+}
+#user-location{
+    padding-bottom: 0.5rem;
+    color: var(---dark-blue);
+    font-weight: 400;
+    font-size: 16px;
+}
+.card-profile-follower-likes-photos{
+    padding-top: 1rem;
+    display: flex;
+    gap: 2.5rem;
+}
+.card-profile-follower-likes-photos h1{
+    font-weight: 700;
+    
+}
+.card-profile-follower-likes-photos p{
+    padding-top: 0.3rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(---dark-blue);
+}
+.line{
+    width: 100%;
+    height: 1.5px;
+    background-color: hsl(227, 10%, 46%, 30%);
+}
+@media only screen and (max-width:1000px){
+    main{
+        background-position: right 40vw  top -100vh, right -65vw top 45vh;
+    }
+    .card{
+        width:300px;
+    }
+}
+@media only screen and (max-width:650px){
+    main{
+        background-position: right 35vw  top -100vh, right -140vw top 45vh;
+    }
+    .card{
+        width:300px;
+    }
+}
+@media only screen and (max-width:400px){
+    main{
+        background-position: right 35vw  top -100vh, right -190vw top 45vh;
+    }
+    .card{
+        width:300px;
+    }
+}
